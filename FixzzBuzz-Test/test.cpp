@@ -23,3 +23,8 @@ TEST(FizzBuzz, Returns_2_AsString) {
 	std::string result = fizzBuzz(2);
 	EXPECT_EQ("2", result); // test fails if the two parameters are not equal 
 }
+
+TEST(FizzBuzz, Returns_4_AsString) {
+	std::string result = fizzBuzz(4);
+	EXPECT_EQ("4", result); // test fails if the two parameters are not equal 
+}
