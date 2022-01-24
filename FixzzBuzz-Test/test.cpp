@@ -1,7 +1,7 @@
 #include "pch.h"
 
 std::string fizzBuzz(int number) {
-	return "";
+	return "1";
 }
 
 TEST(FizzBuzz, CanCallFunction) {
