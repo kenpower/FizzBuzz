@@ -1,11 +1,7 @@
 #include "pch.h"
 
 std::string fizzBuzz(int number) {
-	if (4 == number)
-		return "4";
-	else if (2 == number)
-		return "2";
-	return "1";
+	return std::to_string(number);
 }
 
 TEST(FizzBuzz, CanCallFunction) {
