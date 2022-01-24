@@ -11,3 +11,8 @@ TEST(FizzBuzz, CanCallFunction) {
 TEST(FizzBuzz, ReturnsAString) {
 	std::string result = fizzBuzz(1);
 }
+
+TEST(FizzBuzz, Returns_1_AsString) {
+	std::string result = fizzBuzz(1);
+	EXPECT_EQ("1", result); // test fails if the two parameters are not equal 
+}
