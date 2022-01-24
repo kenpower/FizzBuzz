@@ -3,13 +3,14 @@
 std::string fizzBuzz(int number) {
 	const std::string  MULTIPLE_OF_THREE_STRING = "Fizz";
 	const std::string  MULTIPLE_OF_FIVE_STRING = "Buzz";
-	if (number% 3 == 0 )
+	if (number % 15 == 0)
+		return  MULTIPLE_OF_THREE_STRING + MULTIPLE_OF_FIVE_STRING;
+	if (number % 3 == 0)
 		return MULTIPLE_OF_THREE_STRING;
 	if (number % 5 == 0)
 		return MULTIPLE_OF_FIVE_STRING;
 	return std::to_string(number);
 }
-
 TEST(FizzBuzz, CanCallFunction) {
 	fizzBuzz(1);
 }
