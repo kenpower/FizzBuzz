@@ -2,10 +2,11 @@
 
 std::string fizzBuzz(int number) {
 	const std::string  MULTIPLE_OF_THREE_STRING = "Fizz";
+	const std::string  MULTIPLE_OF_FIVE_STRING = "Buzz";
 	if (number% 3 == 0 )
 		return MULTIPLE_OF_THREE_STRING;
-	if (number ==5)
-		return "Buzz";
+	if (number % 5 == 0)
+		return MULTIPLE_OF_FIVE_STRING;
 	return std::to_string(number);
 }
 
@@ -52,4 +53,9 @@ TEST(FizzBuzz, Returns_6_AsFIZZ) {
 TEST(FizzBuzz, Returns_6_AsBUZZ) {
 	std::string result = fizzBuzz(5);
 	EXPECT_EQ("Buzz", result);
+}
+
+TEST(FizzBuzz, Returns_15_AsFizzBUZZ) {
+	std::string result = fizzBuzz(15);
+	EXPECT_EQ("FizzBuzz", result);
 }
