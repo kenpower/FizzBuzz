@@ -1,6 +1,9 @@
 #include "pch.h"
 
 std::string fizzBuzz(int number) {
+	const std::string  MULTIPLE_OF_THREE_STRING = "Fizz";
+	if (number == 3)
+		return MULTIPLE_OF_THREE_STRING;
 	return std::to_string(number);
 }
 
