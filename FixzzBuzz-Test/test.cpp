@@ -26,3 +26,15 @@ TEST(FizzBuzz, Returns_4_AsString) {
 	std::string result = fizzBuzz(4);
 	EXPECT_EQ("4", result); 
 }
+
+TEST(FizzBuzz, Handles_multi_digit_numbers) {
+	std::string result_11 = fizzBuzz(11);
+	EXPECT_EQ("11", result_11);
+	std::string result_101 = fizzBuzz(101);
+	EXPECT_EQ("101", result_101);
+}
+
+TEST(FizzBuzz, Returns_3_AsFIZZ) {
+	std::string result = fizzBuzz(3);
+	EXPECT_EQ("Fizz", result);
+}
