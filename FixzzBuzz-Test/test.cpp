@@ -1,7 +1,9 @@
 #include "pch.h"
 
 std::string fizzBuzz(int number) {
-	if (2 == number)
+	if (4 == number)
+		return "4";
+	else if (2 == number)
 		return "2";
 	return "1";
 }
@@ -21,10 +23,10 @@ TEST(FizzBuzz, Returns_1_AsString) {
 
 TEST(FizzBuzz, Returns_2_AsString) {
 	std::string result = fizzBuzz(2);
-	EXPECT_EQ("2", result); // test fails if the two parameters are not equal 
+	EXPECT_EQ("2", result); 
 }
 
 TEST(FizzBuzz, Returns_4_AsString) {
 	std::string result = fizzBuzz(4);
-	EXPECT_EQ("4", result); // test fails if the two parameters are not equal 
+	EXPECT_EQ("4", result); 
 }
