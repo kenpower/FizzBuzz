@@ -46,3 +46,8 @@ TEST(FizzBuzz, Returns_6_AsFIZZ) {
 	std::string result = fizzBuzz(6);
 	EXPECT_EQ("Fizz", result);
 }
+
+TEST(FizzBuzz, Returns_6_AsBUZZ) {
+	std::string result = fizzBuzz(5);
+	EXPECT_EQ("Buzz", result);
+}
