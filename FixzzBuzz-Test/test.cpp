@@ -2,7 +2,7 @@
 
 std::string fizzBuzz(int number) {
 	const std::string  MULTIPLE_OF_THREE_STRING = "Fizz";
-	if (number == 3)
+	if (number == 3 )
 		return MULTIPLE_OF_THREE_STRING;
 	return std::to_string(number);
 }
@@ -39,5 +39,10 @@ TEST(FizzBuzz, Handles_multi_digit_numbers) {
 
 TEST(FizzBuzz, Returns_3_AsFIZZ) {
 	std::string result = fizzBuzz(3);
+	EXPECT_EQ("Fizz", result);
+}
+
+TEST(FizzBuzz, Returns_6_AsFIZZ) {
+	std::string result = fizzBuzz(6);
 	EXPECT_EQ("Fizz", result);
 }
