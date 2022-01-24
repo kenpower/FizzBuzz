@@ -1,13 +1,17 @@
 #include "pch.h"
 
+bool isAMultipleOf(int number, int divisor) {
+	return number % divisor == 0;
+}
+
 std::string fizzBuzz(int number) {
 	const std::string  MULTIPLE_OF_THREE_STRING = "Fizz";
 	const std::string  MULTIPLE_OF_FIVE_STRING = "Buzz";
-	if (number % 15 == 0)
+	if (isAMultipleOf(number, 15))
 		return  MULTIPLE_OF_THREE_STRING + MULTIPLE_OF_FIVE_STRING;
-	if (number % 3 == 0)
+	if (isAMultipleOf(number, 3))
 		return MULTIPLE_OF_THREE_STRING;
-	if (number % 5 == 0)
+	if (isAMultipleOf(number, 5))
 		return MULTIPLE_OF_FIVE_STRING;
 	return std::to_string(number);
 }
