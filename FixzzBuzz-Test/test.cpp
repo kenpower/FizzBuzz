@@ -1,6 +1,8 @@
 #include "pch.h"
 
-void fizzBuzz(int number) {}
+std::string fizzBuzz(int number) {
+	return "";
+}
 
 TEST(FizzBuzz, CanCallFunction) {
 	fizzBuzz(1);
