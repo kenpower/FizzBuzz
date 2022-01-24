@@ -4,6 +4,8 @@ std::string fizzBuzz(int number) {
 	const std::string  MULTIPLE_OF_THREE_STRING = "Fizz";
 	if (number% 3 == 0 )
 		return MULTIPLE_OF_THREE_STRING;
+	if (number ==5)
+		return "Buzz";
 	return std::to_string(number);
 }
 
